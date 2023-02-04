@@ -26,7 +26,7 @@ def process_one_dir(rootdir, oneshotdir, file_ending='wav'):
     listing = [l for l in listing if l.split('.')[-1] == file_ending]
 
     # sort 
-    # (use case: one shorts have same prefix and suffices 001,002,.. as generate by recycle)
+    # (use case: one shots have same prefix and suffices 001,002,.. as generate by recycle)
     listing.sort() 
 
     # start from C1
