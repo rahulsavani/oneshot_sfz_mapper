@@ -43,7 +43,7 @@ def process_one_dir(rootdir, oneshotdir, file_ending='wav'):
         with open(output_fpath, 'w') as f: 
             out_str = "<region> "
             out_str += "sample=%s " % l
-            out_str += "pitch_keycenter=%s%s" % (tmp, '') # (tmp, '2')
+            out_str += "pitch_keycenter=%s%s " % (tmp, '') # (tmp, '2')
             out_str += "lokey=0 hikey=127"
             print(out_str)
             f.write(out_str + '\n')
